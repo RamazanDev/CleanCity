@@ -8,15 +8,13 @@
 import SwiftUI
 
 struct ProblemListView: View {
+    
+    @ObservedObject var viewModel: ProblemListViewModel
+    
     var body: some View {
         NavigationView {
-            List {
-                ProblemListCellView(city: "Махачкала", address: "Гагарина 41")
-                    .listRowInsets(EdgeInsets())
-                ProblemListCellView(city: "Махачкала", address: "Гагарина 41")
-                    .listRowInsets(EdgeInsets())
-                ProblemListCellView(city: "Махачкала", address: "Гагарина 41")
-                    .listRowInsets(EdgeInsets())
+            List(viewModel.problems) { problem in
+                ProblemListCellView(problem: problem)
             }
             .navigationBarTitle(Text("Все жалобы"))
         }
@@ -25,6 +23,6 @@ struct ProblemListView: View {
 
 struct ProblemListView_Previews: PreviewProvider {
     static var previews: some View {
-        ProblemListView()
+        ProblemListView(viewModel: .init())
     }
 }

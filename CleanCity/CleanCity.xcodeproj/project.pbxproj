@@ -16,6 +16,8 @@
 		F37365EF2662640700E35C78 /* CleanCityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37365EE2662640700E35C78 /* CleanCityUITests.swift */; };
 		F3736610266269C800E35C78 /* ProblemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F373660F266269C800E35C78 /* ProblemListView.swift */; };
 		F3736616266269F100E35C78 /* ProblemListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3736615266269F100E35C78 /* ProblemListCellView.swift */; };
+		F37366312662EF8800E35C78 /* ProblemListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37366302662EF8800E35C78 /* ProblemListViewModel.swift */; };
+		F37366392662EFE000E35C78 /* ProblemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37366382662EFE000E35C78 /* ProblemModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		F37365F02662640700E35C78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F373660F266269C800E35C78 /* ProblemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemListView.swift; sourceTree = "<group>"; };
 		F3736615266269F100E35C78 /* ProblemListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemListCellView.swift; sourceTree = "<group>"; };
+		F37366302662EF8800E35C78 /* ProblemListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemListViewModel.swift; sourceTree = "<group>"; };
+		F37366382662EFE000E35C78 /* ProblemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,7 @@
 		F37365CB266263F700E35C78 /* CleanCity */ = {
 			isa = PBXGroup;
 			children = (
+				F373662F2662D1FA00E35C78 /* Models */,
 				F37366272662723300E35C78 /* Modules */,
 				F3736620266271DC00E35C78 /* Application */,
 				F37365D22662640600E35C78 /* Assets.xcassets */,
@@ -158,6 +163,7 @@
 		F3736603266268D200E35C78 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				F37366302662EF8800E35C78 /* ProblemListViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -177,6 +183,14 @@
 				F3736601266268B000E35C78 /* ProblemList */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		F373662F2662D1FA00E35C78 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F37366382662EFE000E35C78 /* ProblemModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,7 +324,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F37365CD266263F700E35C78 /* AppDelegate.swift in Sources */,
+				F37366312662EF8800E35C78 /* ProblemListViewModel.swift in Sources */,
 				F37365CF266263F700E35C78 /* SceneDelegate.swift in Sources */,
+				F37366392662EFE000E35C78 /* ProblemModel.swift in Sources */,
 				F3736610266269C800E35C78 /* ProblemListView.swift in Sources */,
 				F3736616266269F100E35C78 /* ProblemListCellView.swift in Sources */,
 			);

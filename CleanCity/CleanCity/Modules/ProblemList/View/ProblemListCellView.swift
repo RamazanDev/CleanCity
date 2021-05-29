@@ -9,9 +9,7 @@ import SwiftUI
 
 struct ProblemListCellView: View {
     
-    @State var imageURL: URL?
-    @State var city: String
-    @State var address: String
+    @State var problem: ProblemModel
     
     var body: some View {
         VStack(alignment: .leading, spacing: 4) {
@@ -22,11 +20,11 @@ struct ProblemListCellView: View {
                 .cornerRadius(4.0)
                 .clipped()
             VStack(alignment: .leading, spacing: 4) {
-                Text(city)
+                Text(problem.city)
                     .font(Font.system(size: 16))
                     .bold()
                     .foregroundColor(.black)
-                Text(address)
+                Text(problem.address)
                     .font(Font.system(size: 14))
                     .bold()
                     .foregroundColor(.black)
@@ -40,6 +38,6 @@ struct ProblemListCellView: View {
 
 struct ProblemListCellView_Previews: PreviewProvider {
     static var previews: some View {
-        ProblemListCellView(city: "Махачкала", address: "Гагарина 41")
+        ProblemListCellView(problem: .init(id: 0, image: nil, city: "Махачкала", address: "Гагарина 64"))
     }
 }

@@ -15,7 +15,7 @@ struct ProblemListView: View {
         NavigationView {
             List(viewModel.problems) { problem in
                 ProblemListCellView(problem: problem)
-            }
+            }.padding(-10)
             .navigationBarTitle(Text("Все жалобы"))
         }
     }

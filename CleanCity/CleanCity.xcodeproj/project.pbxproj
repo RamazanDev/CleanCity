@@ -18,6 +18,7 @@
 		F3736616266269F100E35C78 /* ProblemListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3736615266269F100E35C78 /* ProblemListCellView.swift */; };
 		F37366312662EF8800E35C78 /* ProblemListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37366302662EF8800E35C78 /* ProblemListViewModel.swift */; };
 		F37366392662EFE000E35C78 /* ProblemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37366382662EFE000E35C78 /* ProblemModel.swift */; };
+		F37366632663EE4600E35C78 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37366622663EE4600E35C78 /* TabBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		F3736615266269F100E35C78 /* ProblemListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemListCellView.swift; sourceTree = "<group>"; };
 		F37366302662EF8800E35C78 /* ProblemListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemListViewModel.swift; sourceTree = "<group>"; };
 		F37366382662EFE000E35C78 /* ProblemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemModel.swift; sourceTree = "<group>"; };
+		F37366622663EE4600E35C78 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 		F37365CB266263F700E35C78 /* CleanCity */ = {
 			isa = PBXGroup;
 			children = (
+				F373663D26636CE400E35C78 /* Services */,
 				F373662F2662D1FA00E35C78 /* Models */,
 				F37366272662723300E35C78 /* Modules */,
 				F3736620266271DC00E35C78 /* Application */,
@@ -180,6 +183,7 @@
 		F37366272662723300E35C78 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F37366592663EE2400E35C78 /* TabBar */,
 				F3736601266268B000E35C78 /* ProblemList */,
 			);
 			path = Modules;
@@ -191,6 +195,21 @@
 				F37366382662EFE000E35C78 /* ProblemModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		F373663D26636CE400E35C78 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F37366592663EE2400E35C78 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				F37366622663EE4600E35C78 /* TabBarView.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,6 +344,7 @@
 			files = (
 				F37365CD266263F700E35C78 /* AppDelegate.swift in Sources */,
 				F37366312662EF8800E35C78 /* ProblemListViewModel.swift in Sources */,
+				F37366632663EE4600E35C78 /* TabBarView.swift in Sources */,
 				F37365CF266263F700E35C78 /* SceneDelegate.swift in Sources */,
 				F37366392662EFE000E35C78 /* ProblemModel.swift in Sources */,
 				F3736610266269C800E35C78 /* ProblemListView.swift in Sources */,

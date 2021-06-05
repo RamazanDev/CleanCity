@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,9 @@
 		F37366312662EF8800E35C78 /* ProblemListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37366302662EF8800E35C78 /* ProblemListViewModel.swift */; };
 		F37366392662EFE000E35C78 /* ProblemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37366382662EFE000E35C78 /* ProblemModel.swift */; };
 		F37366632663EE4600E35C78 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37366622663EE4600E35C78 /* TabBarView.swift */; };
+		F37366692663F88E00E35C78 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = F37366682663F88E00E35C78 /* Introspect */; };
+		F374125F266C25B10048722A /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374125E266C25B10048722A /* ProfileView.swift */; };
+		F3741267266C25CE0048722A /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3741266266C25CE0048722A /* ProfileViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,8 @@
 		F37366302662EF8800E35C78 /* ProblemListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemListViewModel.swift; sourceTree = "<group>"; };
 		F37366382662EFE000E35C78 /* ProblemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemModel.swift; sourceTree = "<group>"; };
 		F37366622663EE4600E35C78 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		F374125E266C25B10048722A /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		F3741266266C25CE0048722A /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F37366692663F88E00E35C78 /* Introspect in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,6 +191,7 @@
 			children = (
 				F37366592663EE2400E35C78 /* TabBar */,
 				F3736601266268B000E35C78 /* ProblemList */,
+				F374125B266C25680048722A /* Profile */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -212,6 +219,31 @@
 			path = TabBar;
 			sourceTree = "<group>";
 		};
+		F374125B266C25680048722A /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				F374125D266C258A0048722A /* View */,
+				F374125C266C25830048722A /* ViewModel */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		F374125C266C25830048722A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F3741266266C25CE0048722A /* ProfileViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F374125D266C258A0048722A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F374125E266C25B10048722A /* ProfileView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -228,6 +260,9 @@
 			dependencies = (
 			);
 			name = CleanCity;
+			packageProductDependencies = (
+				F37366682663F88E00E35C78 /* Introspect */,
+			);
 			productName = CleanCity;
 			productReference = F37365C9266263F700E35C78 /* CleanCity.app */;
 			productType = "com.apple.product-type.application";
@@ -299,6 +334,9 @@
 				Base,
 			);
 			mainGroup = F37365C0266263F700E35C78;
+			packageReferences = (
+				F37366672663F88E00E35C78 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
+			);
 			productRefGroup = F37365CA266263F700E35C78 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -342,8 +380,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F374125F266C25B10048722A /* ProfileView.swift in Sources */,
 				F37365CD266263F700E35C78 /* AppDelegate.swift in Sources */,
 				F37366312662EF8800E35C78 /* ProblemListViewModel.swift in Sources */,
+				F3741267266C25CE0048722A /* ProfileViewModel.swift in Sources */,
 				F37366632663EE4600E35C78 /* TabBarView.swift in Sources */,
 				F37365CF266263F700E35C78 /* SceneDelegate.swift in Sources */,
 				F37366392662EFE000E35C78 /* ProblemModel.swift in Sources */,
@@ -677,6 +717,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F37366672663F88E00E35C78 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/siteline/SwiftUI-Introspect.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F37366682663F88E00E35C78 /* Introspect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F37366672663F88E00E35C78 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
+			productName = Introspect;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F37365C1266263F700E35C78 /* Project object */;
 }

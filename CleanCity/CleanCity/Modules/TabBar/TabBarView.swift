@@ -14,6 +14,11 @@ struct TabBarView: View {
                 .tabItem {
                     Label("Все жалобы", systemImage: "")
                 }
+            ProfileView(viewModel: .init())
+                .tabItem {
+                    Label("Профиль",
+                          systemImage: "")
+                }
         }
     }
 }
